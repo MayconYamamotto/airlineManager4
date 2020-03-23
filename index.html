@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/estilos.css">
+    <title>Airline Manager 4</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-blue-dark">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+            <a class="navbar-brand" href="https://www.airline4.net">
+                <img src="public/img/am_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+        </nav>
+
+        <div class="container">
+            <div class="text-center title mt-5 text-light">
+                <h2 class="display-4">Airline Manager 4 tools</h2>
+                <p class="lead">Aliquam erat volutpat. Sed fermentum egestas lacus eu vulputate. Aenean lectus eros,
+                    feugiat vitae est sed, placerat dictum urna. Maecenas porta est ac massa efficitur.</p>
+                <small class="text-center text-light">by: Maycon Yamamotto</small>
+            </div>
+        </div>
+
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item mb-3">
+                <a class="nav-link active text-light" data-toggle="pill" href="#pills-updates"
+                    aria-selected="true">Updates</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-light" data-toggle="pill" href="#pills-cargo" aria-selected="false">Cargo</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-light" data-toggle="pill" href="#pills-pax" aria-selected="false">Pax</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-light" data-toggle="pill" href="#pills-tools" aria-selected="false">Tools</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-light" data-toggle="pill" href="#pills-help" aria-selected="false">Help</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-light" data-toggle="pill" href="#pills-report" aria-selected="false">Report</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+
+            <div class="col-8 ">
+
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- Updates -->
+                    <div class="tab-pane fade show active" id="pills-updates">
+                        <div class="post-notes mt-5">
+                            <h1 class="post-title">Realease 2.0.2</h1>
+                            <span class="post-date">03 Mar 2020</span>
+                            <p>
+                                Bug fixes and improvements.
+                                We appreciate any feedback. You can send feedback to am4@xombat.dk
+                            </p>
+                        </div>
+                        <div class="post-notes mt-5">
+                            <h1 class="post-title">Realease 2.0.2</h1>
+                            <span class="post-date">03 Mar 2020</span>
+                            <p>
+                                Bug fixes and improvements.
+                                We appreciate any feedback. You can send feedback to am4@xombat.dk
+                            </p>
+                        </div>
+                        <div class="post-notes mt-5">
+                            <h1 class="post-title">Realease 2.0.2</h1>
+                            <span class="post-date">03 Mar 2020</span>
+                            <p>
+                                Bug fixes and improvements.
+                                We appreciate any feedback. You can send feedback to am4@xombat.dk
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Cargo -->
+                    <div class="tab-pane fade" id="pills-cargo">
+                        <div class="container container-form">
+                            <ul class="nav nav-pills mb-3 justify-content-center nav-justified" id="pills-tab"
+                                role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#pills-cargo-configuration"
+                                        aria-selected="true">Cargo configuration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#pills-cargo-ticket"
+                                        aria-selected="false">Cargo
+                                        ticket</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Form de configuração -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-cargo-configuration">
+
+                                <div class="container container-form">
+
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label class="form-text text-muted">Large load demand</small>
+                                                <input type="text" class="form-control" placeholder="KG">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-text text-muted">Heavy load demand</small>
+                                                <input type="text" class="form-control" placeholder="KG">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-text text-muted">Capacity</small>
+                                                <input type="text" class="form-control" placeholder="KG">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-text text-muted">Distance</small>
+                                                <input type="text" class="form-control" placeholder="KM">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-text text-muted">Airplane speed</small>
+                                                <input type="text" class="form-control" placeholder="KPH">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-form mb-4">Calculate</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-cargo-ticket">
+
+                                <div class="container container-form">
+                                    <ul class="nav nav-pills mb-3 justify-content-center nav-justified" id="pills-tab"
+                                        role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#pills-cargo-distance"
+                                                aria-selected="true">Distance</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#pills-cargo-route"
+                                                aria-selected="false">Find Route</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Form de Ticket/distance -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-cargo-distance">
+                                        <div class="container container-form">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label class="form-text text-muted">Distance</small>
+                                                        <input type="text" class="form-control" placeholder="KM">
+                                                </div>
+
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-form mb-4">Calculate</button>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- Form de Ticket/route -->
+                                    <div class="tab-pane fade" id="pills-cargo-route">
+
+                                        <div class="container container-form">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label class="form-text text-muted">Departure</small>
+                                                        <input type="text" class="form-control" placeholder="ICAO">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-text text-muted">Arrival</small>
+                                                        <input type="text" class="form-control" placeholder="ICAO">
+                                                </div>
+
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-form mb-4">Calculate</button>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Pax -->
+                    <div class="tab-pane fade" id="pills-pax">
+                        pax</div>
+                </div>
+
+            </div>
+
+            <div class="col-2 "></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

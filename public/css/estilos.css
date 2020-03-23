@@ -1,0 +1,27 @@
+.container-form {
+    width: 400px;
+}
+
+.btn-form {
+    width: 100%;
+}
+
+.bg-blue {
+    background-color: #0077CC;
+}
+
+.bg-blue-dark {
+    background-color: #004A80;
+}
+
+.jumbotron {
+    padding: 0;
+}
+
+.post-title {
+    color: #303030;
+}
+
+.post-date {
+    color: #767676;
+}
